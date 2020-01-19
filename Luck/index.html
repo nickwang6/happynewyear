@@ -10,14 +10,11 @@
 <script>
 function myFunction(){
 	var x;
-	var r=confirm("哈哈哈，你点下试试");
-	if (r==true){
-		x="你按下了\"确定\"按钮!";
+	var person=prompt("请输入你的名字","   ");
+	if (person!=null && person!=""){
+	    x="你好 " + person + "! 新年快乐啊！";
+	    document.getElementById("demo").innerHTML=x;
 	}
-	else{
-		x="你按下了\"取消\"按钮!";
-	}
-	document.getElementById("demo").innerHTML=x;
 }
 </script>
   </body>
